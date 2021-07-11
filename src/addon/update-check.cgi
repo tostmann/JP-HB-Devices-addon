@@ -1,6 +1,6 @@
 #!/bin/tclsh
-set checkURL    "https://raw.githubusercontent.com/jp112sdl/jp-hb-devices-addon/master/src/addon/VERSION"
-set downloadURL "https://github.com/jp112sdl/JP-HB-Devices-addon/releases/latest"
+set checkURL    "https://busmatic.de/jp-hb-devices-addon.version"
+set downloadURL "https://busmatic.de/releases/jp-hb-devices-addon.tgz"
 catch {
   set input $env(QUERY_STRING)
   set pairs [split $input &]
