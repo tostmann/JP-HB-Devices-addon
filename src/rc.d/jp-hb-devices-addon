@@ -118,8 +118,6 @@ patcher()
 
 case "$1" in
     ""|init|start)
-      if [ -e "$CK_FILE" ] && grep -iq 'to\|bu' "$CK_FILE" ; then exit 13; fi
-      if [ -e "$RL_FILE" ] && grep -iq 'hmul'   "$RL_FILE" ; then exit 13; fi
       check_ccu_fw_version
 
       [[ -f $TMP_ERRFILE ]] && rm $TMP_ERRFILE
